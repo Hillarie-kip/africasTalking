@@ -2,13 +2,15 @@
 // Be sure to include the file you've just downloaded
 require_once('AfricasTalkingGateway.php');
 // Specify your authentication credentials
-$username   = "brianokinyi";
-$apikey     = "9d8cdb4889cd4f6490d5f9c1ce89828a367e0155dbebc8b59ec78c618bfe2cc4";
+
+// Get settings
+require_once('settings.php');
+
 // Specify the numbers that you want to send to in a comma-separated list
 // Please ensure you include the country code (+254 for Kenya in this case)
-$recipients = "+254723953897";
+$recipients = "+254********";
 // And of course we want our recipients to know what we really do
-$message    = "Hello there from Africas Talking";
+$message    = "It's important to keep your records for a number of reasons. Records gives you the information you need to run your business, e.g minimum running cost and hence help it grow. More info https://goo.gl/KL46uQ \nLeja";
 // Create a new instance of our awesome gateway class
 $gateway    = new AfricasTalkingGateway($username, $apikey);
 /*************************************************************************************
